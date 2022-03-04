@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>tel.panfilov.intellij.plugin.springboot</id>
+    <name>SpringBoot Patcher</name>
+    <version>1.0</version>
+    <vendor email="andrew@panfilov.tel" url="https://github.com/andreybpanfilov/spring-boot-patcher">Andrey B.Panfilov</vendor>
+
+    <description><![CDATA[
+      Shares spring-boot-maven-plugin settings with IDEA Runner
+    ]]></description>
+
+    <change-notes><![CDATA[
+
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="203.0"/>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <depends>org.jetbrains.idea.maven</depends>
+    <depends>org.jetbrains.idea.maven.ext</depends>
+    <depends>org.jetbrains.idea.maven.model</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <java.programPatcher implementation="tel.panfilov.intellij.plugin.springboot.SpringBootPatcher"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
