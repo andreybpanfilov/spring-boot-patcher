@@ -1,11 +1,15 @@
 <idea-plugin>
     <id>tel.panfilov.intellij.plugin.springboot</id>
     <name>SpringBoot Patcher</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="andrew@panfilov.tel" url="https://github.com/andreybpanfilov/spring-boot-patcher">Andrey B.Panfilov</vendor>
 
     <description><![CDATA[
-      Shares spring-boot-maven-plugin settings with IDEA Runner
+      <p>Shares spring-boot-maven-plugin configuration with IDEA Runner:</p>
+      <p>when IntelliJ IDEA runs main class, plugin tries to discover execution
+      configuration of <b>spring-boot-maven-plugin</b> with the <b>goal=run</b>
+      and same <b>mainClass</b> and in case of success it enriches command line
+      parameters with configured system properties</p>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -27,7 +31,7 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+
     </actions>
 
 </idea-plugin>
